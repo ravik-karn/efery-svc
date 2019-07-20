@@ -2,13 +2,14 @@ package com.efery.web.banner;
 
 import com.google.gson.annotations.SerializedName;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
+@Table(name = "banners")
 public class Banner {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
     private String name;
     private String target;
