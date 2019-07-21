@@ -1,7 +1,5 @@
 package com.efery.web.banner;
 
-import com.google.gson.annotations.SerializedName;
-
 import javax.persistence.*;
 
 @Entity
@@ -14,7 +12,6 @@ public class Banner {
     private String name;
     private String target;
 
-    @SerializedName("image_url")
     private String imageUrl;
 
     public Banner() {

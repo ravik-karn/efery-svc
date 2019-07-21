@@ -23,8 +23,8 @@ public class PageService {
 
     }
 
-    public Optional<Page> getPageByTitle(String pageTitle) {
-        return pageRepository.findBypageTitle(pageTitle);
+    public Page getPageByTitle(String pageTitle) {
+        return pageRepository.findBypageTitle(pageTitle).get();
     }
 
 

@@ -25,6 +25,6 @@ public class PageController {
 
     @RequestMapping(path = "{shopId}/page-title/{pageTitle}", method = RequestMethod.GET)
     public Page getPagesByTitle(@PathVariable Integer shopId, @PathVariable String pageTitle) {
-        return pageService.getPageByTitle(pageTitle).get();
+        return pageService.getPageByTitle(pageTitle);
     }
 }
