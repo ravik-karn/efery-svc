@@ -1,0 +1,3 @@
+CREATE DATABASE efery;
+CREATE USER efery_admin WITH PASSWORD 'C0mplexPwd';
+GRANT ALL PRIVILEGES ON DATABASE efery TO efery_admin;

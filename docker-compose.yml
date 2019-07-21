@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+    pgsql_db:
+        container_name: efery_postgres
+        image: postgres
+        volumes:
+            - ./assets/postgres/initdb.d/:/docker-entrypoint-initdb.d/
+        environment:
+            - POSTGRES_PASSWORD=C0mplexPwd
+        restart: unless-stopped
+        ports:
+            - "5432:5432"
